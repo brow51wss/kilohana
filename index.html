@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kilohana Preschool — Logo Concepts</title>
+  <meta name="description" content="Two logo directions for Kilohana Preschool. Select a concept to open its full presentation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0F2D4D;
+      --teal: #1E7A8C;
+      --coral: #E16A4D;
+      --sand: #E7D9B5;
+      --cream: #FAF6EC;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 48px;
+      background: var(--cream);
+      color: var(--navy);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 820px;
+      margin-bottom: 56px;
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700;
+      line-height: 1.15;
+    }
+
+    .intro p {
+      margin: 0 auto;
+      max-width: 620px;
+      font-size: 18px;
+      line-height: 1.55;
+      color: #3A4F63;
+    }
+
+    .choices {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      width: min(1100px, 100%);
+    }
+
+    .choice {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      background: #fff;
+      border: 1px solid rgba(15, 45, 77, 0.08);
+      border-radius: 8px;
+      padding: 40px 36px 32px;
+      box-shadow: 0 8px 28px rgba(15, 45, 77, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .choice:hover,
+    .choice:focus-visible {
+      transform: translateY(-4px);
+      border-color: var(--teal);
+      box-shadow: 0 16px 36px rgba(15, 45, 77, 0.12);
+      outline: none;
+    }
+
+    .choice img {
+      width: 100%;
+      height: 380px;
+      object-fit: contain;
+    }
+
+    .choice h2 {
+      margin: 28px 0 6px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .choice span {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+
+    .credit {
+      margin: 48px 0 0;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      color: #5A6B7A;
+    }
+
+    @media (max-width: 800px) {
+      body { padding: 40px 20px; }
+      .choices { grid-template-columns: 1fr; }
+      .choice img { height: 300px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="intro">
+    <p class="eyebrow">Kilohana Preschool</p>
+    <h1>Choose a logo direction</h1>
+    <p>Two complete presentations. Each one makes the case for a different identity. Select a concept to review the full story.</p>
+  </header>
+
+  <main class="choices">
+    <a class="choice" href="KilohanaLogoPresentation.dc.html" target="_blank" rel="noopener noreferrer">
+      <img src="assets/kilohana-logo.png" alt="Kilohana Preschool logo, concept 1">
+      <h2>Concept 1</h2>
+      <span>View presentation</span>
+    </a>
+    <a class="choice" href="KilohanaLogoPresentation2.dc.html" target="_blank" rel="noopener noreferrer">
+      <img src="assets2/kilohana2-logo.png" alt="Kilohana Preschool logo, concept 2">
+      <h2>Concept 2</h2>
+      <span>View presentation</span>
+    </a>
+  </main>
+
+  <p class="credit">Presented by White Space Studio, Inc.</p>
+</body>
+</html>
