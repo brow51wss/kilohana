@@ -1,0 +1,22 @@
+---
+description: Ghost (outline) buttons — text color and border color must match
+alwaysApply: true
+---
+
+# Ghost buttons
+
+Ghost buttons are outline-only. **Text color and border color must be the same.**
+
+Use the `.btn-ghost` class, then set the color once (`text-white`, `text-navy`, etc.). The border uses `currentColor`.
+
+```tsx
+// ❌ BAD — faded border, full-opacity text
+<Link className="border-[1.5px] border-white/55 text-white">Enrollment packet</Link>
+
+// ✅ GOOD
+<Link className="btn-ghost text-white px-[26px] py-4 font-heading font-semibold">
+  Enrollment packet
+</Link>
+```
+
+Do not pair `border-white/55` (or any other opacity) with a different text opacity.

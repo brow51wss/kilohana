@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #fbfaf6;
+  --sand: #f2efe4;
+  --navy: #1e2f42;
+  --leaf: #4f7737;
+  --hibiscus: #df5026;
+  --teal: #2a7e7b;
+  --gold: #d3b56e;
+  --plumeria: #d19329;
+  --muted: #435264;
+  --border: #e3e0d6;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-sand: var(--sand);
+  --color-navy: var(--navy);
+  --color-leaf: var(--leaf);
+  --color-hibiscus: var(--hibiscus);
+  --color-teal: var(--teal);
+  --color-gold: var(--gold);
+  --color-plumeria: var(--plumeria);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --font-sans: var(--font-source);
+  --font-heading: var(--font-montserrat);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--navy);
+  font-family: var(--font-source), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+@layer base {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .btn-ghost {
+    border: 1.5px solid currentColor;
+    background: transparent;
+  }
+
+  .btn-ghost:hover {
+    background: color-mix(in srgb, currentColor 12%, transparent);
+  }
+}
