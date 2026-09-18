@@ -62,11 +62,11 @@ export default function AdmissionsPage() {
             </div>
             <div className="bg-sand p-7">
               <div className="mb-2 font-heading text-[32px] font-extrabold leading-none">
-                12–20
+                6–16
               </div>
               <div className="text-[16.5px] text-muted">
-                Children per class, grouped by age, with a teacher and an aide in
-                each room
+                Children per class, grouped by age, with one teacher in each
+                classroom
               </div>
             </div>
             <div className="bg-sand p-7">
@@ -128,7 +128,7 @@ export default function AdmissionsPage() {
         <h2 className="mb-8 font-heading text-[clamp(28px,3.4vw,38px)] font-bold leading-[1.12] tracking-[-0.02em]">
           Download and print
         </h2>
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
           <a
             href={site.pdfs.packet2026}
             target="_blank"
@@ -157,22 +157,6 @@ export default function AdmissionsPage() {
             </div>
             <div className="text-[15.5px] text-[#6b7a88]">
               Prior year, for reference →
-            </div>
-          </a>
-          <a
-            href={site.pdfs.brochure}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block border border-border bg-white p-[30px] hover:border-leaf"
-          >
-            <div className="mb-3 text-[11.5px] tracking-[0.14em] text-[#8a9aa8]">
-              PDF
-            </div>
-            <div className="mb-2 font-heading text-xl font-bold leading-snug text-navy">
-              Informational Brochure
-            </div>
-            <div className="text-[15.5px] text-[#6b7a88]">
-              Program overview to take home →
             </div>
           </a>
         </div>

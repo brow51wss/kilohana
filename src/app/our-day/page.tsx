@@ -109,7 +109,7 @@ export default function OurDayPage() {
               </p>
               <Image
                 src="/assets/photo-lanai.jpg"
-                alt="Child playing in the sandbox on the covered lanai"
+                alt="Covered lanai at Kilohana Preschool"
                 width={4496}
                 height={3000}
                 className="mb-[18px] block h-[280px] w-full object-cover"
@@ -119,9 +119,8 @@ export default function OurDayPage() {
                   Rainy day? Still outside.
                 </h3>
                 <p className="m-0 text-base leading-[1.65] text-muted">
-                  A large covered lanai holds the sandbox, easels and special
-                  programs, so the day keeps its rhythm whatever the weather
-                  does.
+                  A large covered lanai keeps the day going in any weather — a
+                  dry outdoor space for play, easels, and special programs.
                 </p>
               </div>
             </div>
@@ -162,7 +161,7 @@ export default function OurDayPage() {
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {[
-            ["#4F7737", "Pack a lunch", "Lunch comes from home. Both snacks are provided by the school."],
+            ["#4F7737", "Pack a lunch and a water bottle", "A nutritious lunch comes from home. Both snacks are provided by the school."],
             ["#2A7E7B", "Dress for sand", "Play clothes and closed shoes. Children are outside first thing every morning."],
             ["#D19329", "Rest things", "A blanket and a small comfort item for nap time, labeled with your child's name."],
             ["#DF5026", "Toilet trained", "Required for enrollment, for children two to six years of age."],

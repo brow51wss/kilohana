@@ -82,7 +82,7 @@ export default function HomePage() {
           {[
             ["1966", "Serving East Honolulu families"],
             ["1:6", "Staff ratio for two-year-olds"],
-            ["4", "Bright classrooms plus a nap room"],
+            ["3", "Bright classrooms plus a nap room"],
             ["68", "Licensed enrollment, small by design"],
           ].map(([stat, label]) => (
             <div key={stat}>
@@ -116,9 +116,9 @@ export default function HomePage() {
               atmosphere of love, security, acceptance and success.
             </p>
             <div className="border-l-[3px] border-plumeria py-1.5 pl-[18px] text-[17px] leading-relaxed text-navy">
-              Established in 1966 by Kilohana Church to serve young families in
-              Niu Valley, and still a non-denominational, non-profit school
-              today.
+              Established in 1966 by Kilohana United Methodist Church to serve
+              young families in Niu Valley, and still a non-denominational,
+              non-profit school today.
             </div>
           </div>
           <div className="relative">
@@ -236,7 +236,7 @@ export default function HomePage() {
             <div className="grid gap-5">
               <Image
                 src="/assets/photo-lanai.jpg"
-                alt="Child playing in the sandbox on the covered lanai"
+                alt="Covered lanai at Kilohana Preschool"
                 width={4496}
                 height={3000}
                 className="block h-[260px] w-full object-cover"
@@ -246,9 +246,8 @@ export default function HomePage() {
                   Rainy day? Still outside.
                 </h3>
                 <p className="m-0 text-base leading-[1.65] text-muted">
-                  A large covered lanai holds the sandbox, easels and special
-                  programs, so the day keeps its rhythm whatever the weather
-                  does.
+                  A large covered lanai keeps the day going in any weather — a
+                  dry outdoor space for play, easels, and special programs.
                 </p>
               </div>
             </div>
@@ -263,19 +262,22 @@ export default function HomePage() {
               Our facility
             </div>
             <h2 className="mb-[22px] font-heading text-[clamp(30px,3.8vw,44px)] font-bold leading-[1.1] tracking-[-0.02em]">
-              Four classrooms, two shaded acres
+              Three classrooms, two shaded acres
             </h2>
             <p className="mb-[18px] text-lg leading-[1.7] text-muted">
-              We have four large, bright classrooms plus a napping room for our
+              We have three large, bright classrooms plus a napping room for our
               children. Classes are divided by age, with the youngest children
-              having the smallest class size — 12 to 20 students, with a teacher
-              and an aide in each room.
+              having the smallest class size — 6 to 16 students, with one
+              teacher in each classroom.
             </p>
-            <p className="mb-7 text-lg leading-[1.7] text-muted">
+            <p className="mb-[18px] text-lg leading-[1.7] text-muted">
               Our playground is spacious, grassy and naturally shaded by large
               trees. It includes an ample sandbox, swings, an area for riding
               tricycles, and a modern play structure designed specifically for
               preschool-age children.
+            </p>
+            <p className="mb-7 text-lg leading-[1.7] text-muted">
+              Children attend children's chapel twice a month.
             </p>
             <h3 className="mb-3 font-heading text-lg font-semibold">
               Staff to child ratios
@@ -283,8 +285,8 @@ export default function HomePage() {
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
               {[
                 ["1:6", "Two-year-olds"],
-                ["1:9", "Three to four"],
-                ["1:12", "Four to five"],
+                ["1:10", "Three- to four-year-olds"],
+                ["1:14", "Four- to five-year-olds"],
               ].map(([ratio, ages]) => (
                 <div key={ratio} className="border border-border bg-white p-5">
                   <div className="font-heading text-[22px] font-bold">{ratio}</div>
@@ -380,7 +382,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 items-center gap-7 bg-sand p-[34px] md:grid-cols-2">
           <div>
             <h3 className="mb-2 font-heading text-[22px] font-bold">
-              Forms and brochure
+              Forms
             </h3>
             <p className="m-0 text-base leading-relaxed text-muted">
               Download, print and return to the office, or ask us to mail you a
@@ -403,14 +405,6 @@ export default function HomePage() {
               className="block border border-[#d6d2c4] bg-white px-5 py-3.5 font-heading text-[15.5px] font-semibold text-navy hover:border-leaf hover:text-leaf"
             >
               2025–26 Enrollment Application (PDF)
-            </a>
-            <a
-              href={site.pdfs.brochure}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block border border-[#d6d2c4] bg-white px-5 py-3.5 font-heading text-[15.5px] font-semibold text-navy hover:border-leaf hover:text-leaf"
-            >
-              Informational Brochure (PDF)
             </a>
           </div>
         </div>

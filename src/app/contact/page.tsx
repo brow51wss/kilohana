@@ -137,7 +137,7 @@ export default function ContactPage() {
             <h3 className="mb-2.5 font-heading text-lg font-semibold">The church</h3>
             <p className="m-0 text-base leading-[1.65] text-muted">
               The preschool is non-denominational and independent of worship
-              programs.{" "}
+              programs. Children attend children's chapel twice a month.{" "}
               <a
                 href={site.umcUrl}
                 target="_blank"

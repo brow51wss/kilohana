@@ -52,14 +52,6 @@ export function SiteFooter() {
               2026–27 packet
             </a>
             <a
-              href={site.pdfs.brochure}
-              className="text-[#d8e0e8] hover:text-gold"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Brochure
-            </a>
-            <a
               href={site.umcUrl}
               className="text-[#d8e0e8] hover:text-gold"
               target="_blank"

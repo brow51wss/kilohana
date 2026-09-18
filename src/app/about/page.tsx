@@ -17,6 +17,35 @@ const goals = [
   ["03", "#8A6417", "To provide opportunities to develop physical skills and coordination through active play."],
   ["04", "#DF5026", "To help your child develop good listening skills, learn the importance of cooperation and taking turns, acquire social skills and respect for himself or herself as well as others."],
   ["05", "#4F7737", "To work in harmony with parents to provide supportive services if needed."],
+  ["06", "#2A7E7B", "To nurture each child's spiritual, emotional, social, and physical well-being."],
+];
+
+const staff = [
+  {
+    name: "Auntie Lori",
+    title: "Preschool Director",
+    src: "/assets/staff-lori.webp",
+  },
+  {
+    name: "Ms. Naomi",
+    title: "Red Door Teacher (2 and 3 year olds)",
+    src: "/assets/staff-naomi.webp",
+  },
+  {
+    name: "Ms. Gwynne",
+    title: "Green Door Teacher (3 and 4 year olds)",
+    src: "/assets/staff-gwynne.webp",
+  },
+  {
+    name: "Ms. Soo",
+    title: "Yellow Door Teacher (4 and 5 year olds)",
+    src: "/assets/staff-soo.webp",
+  },
+  {
+    name: "Ms. J",
+    title: "Afternoon Aide",
+    src: "/assets/staff-j.webp",
+  },
 ];
 
 export default function AboutPage() {
@@ -41,8 +70,8 @@ export default function AboutPage() {
             </h2>
             <p className="mb-[18px] text-lg leading-[1.7] text-muted">
               Kilohana Preschool was established in 1966 because of the desire of
-              Kilohana Church to be in ministry to young families in the new
-              community of Niu Valley.
+              Kilohana United Methodist Church to be in ministry to young
+              families in the new community of Niu Valley.
             </p>
             <p className="m-0 text-lg leading-[1.7] text-muted">
               It continues to be a non-denominational, non-profit school providing
@@ -162,21 +191,31 @@ export default function AboutPage() {
           The teachers your child will know by name
         </h2>
         <p className="mb-8 max-w-[62ch] text-lg leading-[1.7] text-muted">
-          Each classroom has a teacher and an aide, and class sizes stay small —
-          12 to 20 children, grouped by age.
+          Each classroom has one teacher, and class sizes stay small —
+          6 to 16 children, grouped by age.
         </p>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
-          {["Director", "Lead teacher", "Lead teacher", "Office"].map((role, i) => (
-            <div
-              key={`${role}-${i}`}
-              className="flex min-h-[250px] items-center justify-center border border-dashed border-[#c6c0ac] bg-[repeating-linear-gradient(135deg,#FFFFFF,#FFFFFF_10px,#F7F5EE_10px,#F7F5EE_20px)] p-6 text-center"
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          {staff.map((person) => (
+            <article
+              key={person.name}
+              className="overflow-hidden border border-border bg-white"
             >
-              <span className="text-[15px] leading-relaxed text-[#8a7f63]">
-                {role}
-                <br />
-                Photo and bio coming soon
-              </span>
-            </div>
+              <Image
+                src={person.src}
+                alt={person.name}
+                width={800}
+                height={1000}
+                className="aspect-[4/5] w-full object-cover object-top"
+              />
+              <div className="p-5">
+                <h3 className="mb-1 font-heading text-lg font-semibold text-navy">
+                  {person.name}
+                </h3>
+                <p className="m-0 text-[15px] leading-snug text-muted">
+                  {person.title}
+                </p>
+              </div>
+            </article>
           ))}
         </div>
       </section>
