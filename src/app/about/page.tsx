@@ -149,10 +149,10 @@ export default function AboutPage() {
       <section className="mx-auto max-w-[1180px] px-6 pt-20">
         <div className="grid grid-cols-1 items-center gap-[52px] md:grid-cols-2">
           <Image
-            src="/assets/photo-room.jpg"
-            alt="Block center in a Kilohana classroom"
-            width={4281}
-            height={2759}
+            src="/assets/photo-slide.webp"
+            alt="Child climbing the playground slide"
+            width={1600}
+            height={1067}
             className="block h-[400px] w-full object-cover"
           />
           <div>

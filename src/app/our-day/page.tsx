@@ -162,7 +162,7 @@ export default function OurDayPage() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {[
             ["#4F7737", "Pack a lunch and a water bottle", "A nutritious lunch comes from home. Both snacks are provided by the school."],
-            ["#2A7E7B", "Dress for sand", "Play clothes and closed shoes. Children are outside first thing every morning."],
+            ["#2A7E7B", "Dress for comfort", "Play clothes for running, jumping, climbing and possibly getting messy. Shorts need to be worn under skirts and dresses."],
             ["#D19329", "Rest things", "A blanket and a small comfort item for nap time, labeled with your child's name."],
             ["#DF5026", "Toilet trained", "Required for enrollment, for children two to six years of age."],
           ].map(([color, title, body]) => (

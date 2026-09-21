@@ -297,10 +297,10 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/assets/photo-room.jpg"
-              alt="Classroom block center"
-              width={4281}
-              height={2759}
+              src="/assets/photo-slide.webp"
+              alt="Child climbing the playground slide"
+              width={1600}
+              height={1067}
               className="col-span-2 block h-[210px] w-full object-cover"
             />
             <Image
