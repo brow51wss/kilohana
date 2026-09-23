@@ -12,7 +12,8 @@ export function TourForm() {
   if (state.status === "ok") {
     return (
       <p className="m-0 text-lg leading-relaxed text-navy">
-        Thank you. The office will call you back with a time.
+        Thank you. The office will call you back with a time. A confirmation
+        email is on its way.
       </p>
     );
   }

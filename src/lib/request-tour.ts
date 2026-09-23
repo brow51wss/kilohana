@@ -2,6 +2,7 @@
 
 import { Resend } from "resend";
 import { childAges, site } from "@/lib/site";
+import { officeTourEmail, parentTourEmail } from "@/lib/tour-email";
 
 export type TourState =
   | { status: "idle" }
@@ -63,20 +64,16 @@ export async function requestTour(
 
   const inbox = process.env.TOUR_INBOX ?? site.email;
   const resend = new Resend(apiKey);
+  const details = { parentName, email, phone, childAge, notes };
+  const office = officeTourEmail(details);
 
   const { error } = await resend.emails.send({
     from,
     to: inbox,
     replyTo: email,
-    subject: `Tour request from ${parentName}`,
-    text: [
-      `Parent: ${parentName}`,
-      `Email: ${email}`,
-      `Phone: ${phone}`,
-      `Child's age: ${childAge}`,
-      "",
-      notes || "(no additional notes)",
-    ].join("\n"),
+    subject: office.subject,
+    html: office.html,
+    text: office.text,
   });
 
   if (error) {
@@ -85,6 +82,20 @@ export async function requestTour(
       message:
         "The request could not be sent. Please call the office or try again.",
     };
+  }
+
+  const parent = parentTourEmail(parentName);
+  const { error: parentError } = await resend.emails.send({
+    from,
+    to: email,
+    replyTo: inbox,
+    subject: parent.subject,
+    html: parent.html,
+    text: parent.text,
+  });
+
+  if (parentError) {
+    console.error("Parent tour confirmation failed", parentError);
   }
 
   return { status: "ok" };
