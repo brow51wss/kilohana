@@ -19,12 +19,33 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.kilohanapreschool.com"),
   title: {
     default: `${site.name} | Niu Valley, Honolulu`,
     template: `%s | ${site.name}`,
   },
   description:
     "A non-profit, non-denominational preschool for keiki ages two to six in Niu Valley, East Honolulu. Serving families since 1966.",
+  icons: {
+    icon: "/assets/favicon.png",
+    apple: "/assets/favicon.png",
+  },
+  openGraph: {
+    type: "website",
+    siteName: site.name,
+    images: [
+      {
+        url: "/assets/opengraph.jpg",
+        width: 1024,
+        height: 700,
+        alt: site.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/assets/opengraph.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
