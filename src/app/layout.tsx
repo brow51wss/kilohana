@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: site.name,
+    title: "A preschool for ages 2–6 in Niu Valley",
     images: [
       {
         url: "/assets/opengraph.jpg",
@@ -44,6 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    title: "A preschool for ages 2–6 in Niu Valley",
     images: ["/assets/opengraph.jpg"],
   },
 };
